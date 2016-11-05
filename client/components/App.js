@@ -30,28 +30,20 @@ export class Home extends React.Component {
   }
 }
 
-export class About extends React.Component {
-  render() {
-    return (
-      <div className={cx('page')}>
-        <div className={cx('siteTitle')}>
-          <h1>About Page</h1>
-        </div>
-        <p>Welcome to the about page...</p>
-      </div>
-    );
-  }
-}
+export const About = () => (
+  <div className={cx('page')}>
+    <div className={cx('siteTitle')}>
+      <h1>About Page</h1>
+    </div>
+    <p>Welcome to the about page...</p>
+  </div>
+);
 
-export class NotFound extends React.Component {
-  render() {
-    return (
-      <div className={cx('page')}>
-        <h4>Not found</h4>
-      </div>
-    );
-  }
-}
+export const NotFound = () => (
+  <div className={cx('page')}>
+    <h4>Not found</h4>
+  </div>
+);
 
 /**
  * NOTE: As of 2015-11-09 react-transform does not support a functional
